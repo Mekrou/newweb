@@ -1,0 +1,3 @@
+[submodule "js-template"]
+	path = js-template
+	url = git@github.com:Mekrou/js-template.git
