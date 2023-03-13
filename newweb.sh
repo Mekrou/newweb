@@ -14,9 +14,13 @@ echo $INDEX_LOC
 echo $APP_LOC
 echo $STARTING_DIR
 
+PRJ_DIR=$STARTING_DIR/$NAME
+
 # copy default template into new folder
-cp $INDEX_LOC $APP_LOC $STARTING_DIR/$NAME 
+cp $INDEX_LOC $APP_LOC $PRJ_DIR 
 
 #open new folder in vscode
-code $STARTING_DIR/$NAME
+code $PRJ_DIR
 
+#open index.html in firefox
+firefox $PRJ_DIR/index.html
